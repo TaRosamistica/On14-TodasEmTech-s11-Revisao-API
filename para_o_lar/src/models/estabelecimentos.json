@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "likes": 1,
+        "deslikes": 1,
+        "nome": "Burgiff",
+        "categoria": "Hamburgueria",
+        "endereço": "Rua Vidal de Negreiros",
+        "numero": 184,
+        "bairro": "centro",
+        "cidade": "Campina Grande",
+        "telefone": "(83) 99656-3959",
+        "pagamento": ["Dinheiro", "pix"],
+        "delivery": true
+
+    },
+
+    {
+        "id" :2,
+        "likes": 1,
+        "deslikes": 1,
+        "nome": "Bom Pescado",
+        "categoria": "Restaurante",
+        "endereço": "Rua Vigario Calixto",
+        "numero": 1371,
+        "bairro": "catole",
+        "cidade": "Campina Grande",
+        "telefone": "(83) 99639-0515",
+        "pagamento": ["Dinheiro", "cartao", "pix"],
+        "delivery":false
+    }
+]
