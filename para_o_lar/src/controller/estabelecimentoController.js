@@ -53,6 +53,19 @@ const cadastrar = (req, res) => {
         pagamento: body.pagamento,
         delivery: body.delivery
     }
+    //criando campos obrigatórios ao cadastrar 
+    if(!body.nome || !body.pagamento || !body.cidade){
+       return res.status(400).send({message: "Preencha todos os campos obrigatórios"})
+    }
+
+    if(body.telefone.length > 15){
+        return res.status(400).send({menssage: "Número de telefone inválido"})
+    }
+
+
+
+
+
     models.push(novoEstabelecimento) //empurrar para o json o novo cadastro
 res.status(201).send(novoEstabelecimento)
 }
@@ -81,7 +94,7 @@ const like = (req, res) => {
 
      }
 
-     found.likes -= 1
+     found.deslikes += 1
      res.status(200).send(found)
  }   
 
